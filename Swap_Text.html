@@ -1,0 +1,47 @@
+  <!DOCTYPE html>
+<html>
+ <head>
+  <title>Swap Text</title>
+  <meta charset="utf-8">
+  
+<script>
+
+/*=========CODE============*/
+
+function swap_text(){
+
+var a = document.getElementById("text1").value;		
+var b = document.getElementById("text2").value;			
+var tmp;			 
+
+var tmp = a;
+var a = b;
+var b = tmp;
+
+tmp = document.getElementById("text1").value;
+document.getElementById("text1").value = document.getElementById("text2").value;;
+document.getElementById("text2").value = tmp;
+
+}
+
+/*========================*/
+
+</script>
+
+ </head>
+ <body>
+  <h1>Swap Text</h1>
+  
+    <p>
+      <input  id="text1" type="text" value="APPLE"> 
+    </p>
+
+    <p>
+      <input  id="text2" type="text" value="BANANA"> 
+    </p>
+    <p>
+       <input  id="swap_text" type="button" value="Swap text" onclick="swap_text()">   
+    </p>
+  
+ </body>
+</html>
